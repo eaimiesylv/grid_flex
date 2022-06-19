@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Replicate Design</title>
+    <style>
+		*{
+			margin:0;
+			padding:0;
+			border-style:none;
+			box-sizing: border-box;
+		}
+		
+		body{
+			background:#262626;
+			display:flex;
+			place-items:center;
+			height:100vh;
+			
+		}
+		main{
+			background:#1A1C28;
+			display:grid;
+			grid-template-areas:
+			'a a a b '
+			'c c d d  '
+			'c c e e';
+			gap:5px;
+			width:50%;
+			margin:auto;
+			padding:10em;
+			
+		}
+		
+		div{
+			padding:2em;
+			text-align:center;
+			}
+		.a{
+			grid-area:a;
+			background:#EB5020;
+		}
+		.b{
+			grid-area:b;
+			background:#FFA401;
+		}
+		.c{
+			grid-area:c;
+			background:#05AA42;
+		}
+		.d{
+			grid-area:d;
+			background:#01AEFD;
+		}
+		.e{
+			grid-area:e;
+			background:#01AEFD;
+		}
+	</style>
+	
+  </head>
+ <body>
+	<main>
+		
+			<div class="a">a</div>
+			<div class="b">b</div>
+			<div class="c">c</div>
+			<div class="d">d</div>
+			<div class="e">e</div>
+			
+
+	</main>
+ 
+ </body>
+</html>
